@@ -1,0 +1,69 @@
+/*popup*/
+
+body{
+    background: #fefefe;
+  }
+  
+  h1{
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 70px;
+    margin: 20px 0;
+    display: block;
+  }
+  
+  #popup2-popup{
+    margin: 70px auto;
+    padding:30px 40px 40px;
+    background: #fff;
+    border-radius: 5px;
+    width: 25%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  @media screen and (max-width: 1366px){
+    #popup2-popup{
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 992px){
+    #popup2-popup{
+      width: 70%;
+    }
+  }
+  
+  .popup2-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+    display: none;
+  }
+  
+  #popup2-popup h3{
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 10px;
+    font-family: 'Gloria Hallelujah',cursive;
+  }
+  
+  #popup2-popup .popup-close2{
+    color: #666;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    font-family:  "Gloria Hallelujah",cursive;
+    font-weight: bold;
+  }

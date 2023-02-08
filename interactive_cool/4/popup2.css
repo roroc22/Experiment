@@ -1,16 +1,6 @@
 /*popup*/
 
-body{
-    background: #fefefe;
-  }
-  
-  h1{
-    font-family: Helvetica;
-    text-align: center;
-    font-size: 70px;
-    margin: 20px 0;
-    display: block;
-  }
+
   
   #popup2-popup{
     margin: 70px auto;

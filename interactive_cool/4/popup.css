@@ -1,7 +1,7 @@
 /*popup*/
 
 
-  #newsletter-popup{
+  #newsletter-popup, #popup2-popup, #popup3-popup{
     margin: 70px auto;
     padding:30px 40px 40px;
     background: #fff;
@@ -15,15 +15,27 @@
     #newsletter-popup{
       width: 40%;
     }
+    #popup2-popup{
+      width: 40%;
+    }
+    #popup3-popup{
+      width: 40%;
+    }
   }
   
   @media screen and (max-width: 992px){
     #newsletter-popup{
       width: 70%;
     }
+    #popup2-popup{
+      width: 70%;
+    }
+    #popup3-popup{
+      width: 70%;
+    }
   }
   
-  .newsletter-overlay{
+  .newsletter-overlay, .popup3-overlay, .popup2-overlay{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -36,14 +48,8 @@
     display: none;
   }
   
-  #newsletter-popup h3{
-    color: #fff;
-    font-size: 24px;
-    margin: 0 0 10px;
-    font-family: 'Gloria Hallelujah',cursive;
-  }
-  
-  #newsletter-popup .popup-close{
+ 
+  #newsletter-popup .popup-close, #popup2-popup .popup-close2, #popup3-popup .popup-close3{
     color: #666;
     height: 30px;
     width: 30px;

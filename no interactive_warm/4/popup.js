@@ -22,6 +22,7 @@ function showpopupPopup(){
 }
 
 
+
 function hidepopupPopup(){
     if( getCookie('newsletter-popup') == ""){
       $('.newsletter-overlay').hide();

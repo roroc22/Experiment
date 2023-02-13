@@ -1,34 +1,34 @@
-//popup2
-var delay2 = 12000; //in milleseconds
-var hide2 = 14000; 
+//popup3
+var delay3 = 9000; //in milleseconds
+var hide3 = 11000; 
 
 
 jQuery(document).ready(function($){
-  setTimeout(function(){ showpopup2Popup(); }, delay4);
+  setTimeout(function(){ showpopup3Popup(); }, delay3);
 });
 
 jQuery(document).ready(function($){
-    setTimeout(function(){ hidepopup2Popup(); }, hide4);
+    setTimeout(function(){ hidepopup3Popup(); }, hide3);
   });
 
-function showpopup2Popup(){
-  if( getCookie('popup2-popup') == ""){
-    $('.popup2-overlay').show();
-    setCookie('popup2-popup', 'popped', 30);
+function showpopup3Popup(){
+  if( getCookie('popup3-popup') == ""){
+    $('.popup3-overlay').show();
+    setCookie('popup3-popup', 'popped', 30);
   }
   else{
-    console.log("popup2 popup blocked.");
+    console.log("popup3 popup blocked.");
   }
 }
 
 
-function hidepopup2Popup(){
-    if( getCookie('popup2-popup') == ""){
-      $('.popup2-overlay').hide();
-      setCookie('popup2-popup', 'popped', 30);
+function hidepopup3Popup(){
+    if( getCookie('popup3-popup') == ""){
+      $('.popup3-overlay').hide();
+      setCookie('popup3-popup', 'popped', 30);
     }
     else{
-      console.log("popup2 popup blocked.");
+      console.log("popup3 popup blocked.");
     }
   }
 

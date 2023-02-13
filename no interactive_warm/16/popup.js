@@ -1,20 +1,20 @@
 //popup2
-var delay3 = 9000; //in milleseconds
-var hide3 = 11000; 
+var delay1 = 3000; //in milleseconds
+var hide1 = 5000; 
 
 
 jQuery(document).ready(function($){
-  setTimeout(function(){ showpopup2Popup(); }, delay3);
+  setTimeout(function(){ showpopupPopup(); }, delay1);
 });
 
 jQuery(document).ready(function($){
-    setTimeout(function(){ hidepopup2Popup(); }, hide3);
+    setTimeout(function(){ hidepopupPopup(); }, hide1);
   });
 
-function showpopup2Popup(){
-  if( getCookie('popup2-popup') == ""){
-    $('.popup2-overlay').show();
-    setCookie('popup2-popup', 'popped', 30);
+function showpopupPopup(){
+  if( getCookie('newsletter-popup') == ""){
+    $('.newsletter-overlay').show();
+    setCookie('newsletter-popup', 'popped', 30);
   }
   else{
     console.log("popup2 popup blocked.");
@@ -22,10 +22,10 @@ function showpopup2Popup(){
 }
 
 
-function hidepopup2Popup(){
-    if( getCookie('popup2-popup') == ""){
-      $('.popup2-overlay').hide();
-      setCookie('popup2-popup', 'popped', 30);
+function hidepopupPopup(){
+    if( getCookie('newsletter-popup') == ""){
+      $('.newsletter-overlay').hide();
+      setCookie('newsletter-popup', 'popped', 30);
     }
     else{
       console.log("popup2 popup blocked.");

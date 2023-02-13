@@ -1,14 +1,14 @@
 //popup2
-var delay1 = 3000; //in milleseconds
-var hide1 = 5000; 
+var delay2 = 13000; //in milleseconds
+var hide2 =15000; 
 
 
 jQuery(document).ready(function($){
-  setTimeout(function(){ showpopup2Popup(); }, delay1);
+  setTimeout(function(){ showpopup2Popup(); }, delay2);
 });
 
 jQuery(document).ready(function($){
-    setTimeout(function(){ hidepopup2Popup(); }, hide1);
+    setTimeout(function(){ hidepopup2Popup(); }, hide2);
   });
 
 function showpopup2Popup(){

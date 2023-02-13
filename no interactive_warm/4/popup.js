@@ -1,4 +1,4 @@
-//popup2
+//popup1
 var delay1 = 3000; //in milleseconds
 var hide1 = 5000; 
 
@@ -31,7 +31,74 @@ function hidepopupPopup(){
       console.log("popup2 popup blocked.");
     }
   }
+//popup2
+var delay2 = 6000; //in milleseconds
+var hide2 = 8000; 
 
+
+jQuery(document).ready(function($){
+  setTimeout(function(){ showpopup2Popup(); }, delay2);
+});
+
+jQuery(document).ready(function($){
+    setTimeout(function(){ hidepopup2Popup(); }, hide2);
+  });
+
+function showpopup2Popup(){
+  if( getCookie('popup2-popup') == ""){
+    $('.popup2-overlay').show();
+    setCookie('popup2-popup', 'popped', 30);
+  }
+  else{
+    console.log("popup2 popup blocked.");
+  }
+}
+
+
+function hidepopup2Popup(){
+    if( getCookie('popup2-popup') == ""){
+      $('.popup2-overlay').hide();
+      setCookie('popup2-popup', 'popped', 30);
+    }
+    else{
+      console.log("popup2 popup blocked.");
+    }
+  }
+//popup3
+//popup4
+var delay4 = 12000; //in milleseconds
+var hide4 = 14000; 
+
+
+jQuery(document).ready(function($){
+  setTimeout(function(){ showpopup4Popup(); }, delay4);
+});
+
+jQuery(document).ready(function($){
+    setTimeout(function(){ hidepopup4Popup(); }, hide4);
+  });
+
+function showpopup4Popup(){
+  if( getCookie('popup4-popup') == ""){
+    $('.popup4-overlay').show();
+    setCookie('popup4-popup', 'popped', 30);
+  }
+  else{
+    console.log("popup4 popup blocked.");
+  }
+}
+
+
+function hidepopup4Popup(){
+    if( getCookie('popup4-popup') == ""){
+      $('.popup4-overlay').hide();
+      setCookie('popup4-popup', 'popped', 30);
+    }
+    else{
+      console.log("popup4 popup blocked.");
+    }
+  }
+  //popup4
 function setCookie(cname,cvalue,exdays)
 {
     var d = new Date();
@@ -51,3 +118,4 @@ function getCookie(cname)
     }
     return "";
 }
+

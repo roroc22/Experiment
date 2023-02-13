@@ -1,4 +1,4 @@
-//popup2
+//popup4
 var delay4 = 12000; //in milleseconds
 var hide4 = 14000; 
 

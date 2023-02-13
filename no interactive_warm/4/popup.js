@@ -65,6 +65,39 @@ function hidepopup2Popup(){
     }
   }
 //popup3
+//popup3
+var delay3 = 9000; //in milleseconds
+var hide3 = 11000; 
+
+
+jQuery(document).ready(function($){
+  setTimeout(function(){ showpopup3Popup(); }, delay3);
+});
+
+jQuery(document).ready(function($){
+    setTimeout(function(){ hidepopup3Popup(); }, hide3);
+  });
+
+function showpopup3Popup(){
+  if( getCookie('popup3-popup') == ""){
+    $('.popup3-overlay').show();
+    setCookie('popup3-popup', 'popped', 30);
+  }
+  else{
+    console.log("popup3 popup blocked.");
+  }
+}
+
+
+function hidepopup3Popup(){
+    if( getCookie('popup3-popup') == ""){
+      $('.popup3-overlay').hide();
+      setCookie('popup3-popup', 'popped', 30);
+    }
+    else{
+      console.log("popup3 popup blocked.");
+    }
+  }
 //popup4
 var delay4 = 12000; //in milleseconds
 var hide4 = 14000; 

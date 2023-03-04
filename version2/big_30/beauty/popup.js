@@ -1,7 +1,8 @@
-
+var delay1 = 6000; //in milleseconds
+var delay2 = 8000; 
 
   jQuery(document).ready(function($){
-    setTimeout(function(){ showpopupPopup(); });
+    setTimeout(function(){ showpopupPopup(); }, delay1);
   });
 
 function showpopupPopup(){
@@ -15,36 +16,20 @@ function showpopupPopup(){
 }
 
 
-
 jQuery(document).ready(function($){
   setTimeout(function(){ showpopup2Popup(); }, delay2);
 });
 
 
-
 function showpopup2Popup(){
   if( getCookie('popup2-popup') == ""){
-    $('.popup2-overlay').show().delay(3000).hide(1);
-    setCookie('popup2-popup', 'popped', 10);
+    $('.popup2-overlay').show().delay(5000).hide(1);
+    setCookie('popup2-popup', 'popped', 30);
   }
   else{
     console.log("popup2 popup blocked.");
   }
 }
-
-jQuery(document).ready(function($){
-  setTimeout(function(){ hidepopup2Popup(); }, hide2);
-});
-
-function hidepopup2Popup(){
-    if( getCookie('popup2-popup') == ""){
-      $('.popup2-overlay').hide();
-      setCookie('popup2-popup', 'popped', 10);
-    }
-    else{
-      console.log("popup2 popup blocked.");
-    }
-  }
 
 /////
 

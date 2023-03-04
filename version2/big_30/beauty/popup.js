@@ -3,6 +3,8 @@ var delay1 = 45000; //in milleseconds
 var hide1 = 50000; 
 
 
+
+
 /*jQuery(document).ready(function($){
   setTimeout(function(){ showpopupPopup(); }, delay1);
 });*/

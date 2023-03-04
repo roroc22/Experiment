@@ -41,25 +41,26 @@ jQuery(document).ready(function($){
   setTimeout(function(){ showpopup2Popup(); }, delay2);
 });
 
-jQuery(document).ready(function($){
-    setTimeout(function(){ hidepopup2Popup(); }, hide2);
-  });
+
 
 function showpopup2Popup(){
   if( getCookie('popup2-popup') == ""){
     $('.popup2-overlay').show();
-    setCookie('popup2-popup', 'popped', 30);
+    setCookie('popup2-popup', 'popped', 10);
   }
   else{
     console.log("popup2 popup blocked.");
   }
 }
 
+jQuery(document).ready(function($){
+  setTimeout(function(){ hidepopup2Popup(); }, hide2);
+});
 
 function hidepopup2Popup(){
     if( getCookie('popup2-popup') == ""){
       $('.popup2-overlay').hide();
-      setCookie('popup2-popup', 'popped', 30);
+      setCookie('popup2-popup', 'popped', 10);
     }
     else{
       console.log("popup2 popup blocked.");

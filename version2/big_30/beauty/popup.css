@@ -6,7 +6,7 @@
     padding:30px 40px 40px;
     background: #fff;
     border-radius: 5px;
-    width: 375 px;
+    width: 250 px;
     position: relative;
     transition: all 5s ease-in-out;
   }
@@ -18,17 +18,22 @@
     #popup2-popup{
       width: 375px;
     }
+    #popup3-popup{
+      width: 375px;
+    }
     
   }
   
   @media screen and (max-width: 992px){
     #newsletter-popup{
-      width: 375px;
+      width: 250px;
     }
     #popup2-popup{
+      width: 250px;
+    }
+    #popup3-popup{
       width: 375px;
     }
-    
   }
   
   .newsletter-overlay, .popup3-overlay, .popup2-overlay, .popup4-overlay{

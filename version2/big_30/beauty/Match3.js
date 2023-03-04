@@ -362,8 +362,6 @@ $("body").ready(function(){
 //插入新的資訊
 var delay3 = 10000; 
 
-
-
 jQuery(document).ready(function($){
     setTimeout(function(){ showpopup3Popup(); }, delay3);
   });

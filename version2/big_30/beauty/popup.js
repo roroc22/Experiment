@@ -31,6 +31,8 @@ function showpopup2Popup(){
   }
 }
 
+
+
 /////
 
 function setCookie(cname,cvalue,exdays)

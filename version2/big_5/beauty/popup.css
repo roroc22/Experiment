@@ -2,37 +2,43 @@
 
 
   #newsletter-popup, #popup2-popup, #popup3-popup, #popup4-popup{
-    margin: 70px auto;
-    padding:30px 40px 40px;
+    margin: 50px auto;
+    padding:10px;
     background: #fff;
     border-radius: 5px;
-    width: 250 px;
+    
     position: relative;
     transition: all 5s ease-in-out;
   }
   
-  @media screen and (max-width: 1366px){
+  /*@media screen and (max-width: 1366px){
     #newsletter-popup{
       width: 375px;
+      height:660px;
     }
     #popup2-popup{
       width: 375px;
+      height:660px;
     }
     #popup3-popup{
       width: 375px;
+      height:660px;
     }
     
-  }
+  }*/
   
   @media screen and (max-width: 992px){
     #newsletter-popup{
-      width: 250px;
+      width: 320px;
+      height: 480px;
     }
     #popup2-popup{
-      width: 250px;
+      width: 320px;
+      height: 480px;
     }
     #popup3-popup{
-      width: 375px;
+      width: 320px;
+      height: 100px;
     }
   }
   

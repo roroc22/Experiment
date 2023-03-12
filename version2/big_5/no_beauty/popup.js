@@ -1,5 +1,5 @@
-var delay1 = 6000; //in milleseconds
-var delay2 = 8000; 
+var delay1 = 10000; //in milleseconds
+var delay2 = 20000; 
 
   jQuery(document).ready(function($){
     setTimeout(function(){ showpopupPopup(); }, delay1);
@@ -7,7 +7,7 @@ var delay2 = 8000;
 
 function showpopupPopup(){
   if( getCookie('newsletter-popup') == ""){
-    $('.newsletter-overlay').show().delay(1000).hide(1);
+    $('.newsletter-overlay').show().delay(5000).hide(1);
     setCookie('newsletter-popup', 'popped', 30);
   }
   else{
@@ -31,7 +31,24 @@ function showpopup2Popup(){
   }
 }
 
+//時間到
+var delay3 = 30000; 
 
+jQuery(document).ready(function($){
+    setTimeout(function(){ showpopup3Popup(); }, delay3);
+  });
+  
+  
+  function showpopup3Popup(){
+    if( getCookie('popup3-popup') == ""){
+
+      $('.popup3-overlay').show();
+      setCookie('popup3-popup', 'popped', 30);
+    }
+    else{
+      console.log("popup3 popup blocked.");
+    }
+  }
 
 /////
 

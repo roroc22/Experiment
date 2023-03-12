@@ -359,21 +359,3 @@ $("body").ready(function(){
 });
 
 
-//插入新的資訊
-var delay3 = 10000; 
-
-jQuery(document).ready(function($){
-    setTimeout(function(){ showpopup3Popup(); }, delay3);
-  });
-  
-  
-  function showpopup3Popup(){
-    if( getCookie('popup3-popup') == ""){
-
-      $('.popup3-overlay').show();
-      setCookie('popup3-popup', 'popped', 30);
-    }
-    else{
-      console.log("popup3 popup blocked.");
-    }
-  }
